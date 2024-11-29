@@ -1,0 +1,17 @@
+@mixin blinker {
+    color: blue;
+    animation: blinker 1s step-end infinite;
+    @keyframes blinker {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

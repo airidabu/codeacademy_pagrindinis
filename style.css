@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  font-family: Arial;
+}
+header div.navigation-bar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding-top: 10px;
+}
+
+main {
+  font-family: Arial;
+}
+main div.dark-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+main div.dark-content-wrapper div.dark-content-item {
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.dark-content-wrapper a.button-link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.dark-content-wrapper::after {
+  content: "";
+  padding-bottom: 60px;
+}
+main div.codeacademy-pulse {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.codeacademy-pulse div.pulse-item {
+  display: flex;
+  flex-direction: column;
+}
+main div.codeacademy-pulse div.pulse-item .big-text {
+  font-size: 95px;
+  font-weight: 700;
+}
+main div.codeacademy-pulse div.pulse-item div.big-text:last-of-type {
+  font-size: 72px;
+}
+main div.codeacademy-pulse div.pulse-item .big-text:first-of-type::after {
+  content: "_";
+  color: blue;
+  animation: blinker 1s step-end infinite;
+}
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main div.if-u-can {
+  display: flex;
+  flex-direction: column;
+  background-color: #1103b6;
+  color: white;
+}
+main div.if-u-can .if-u-can-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.if-u-can a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.if-u-can img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main div.video {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+main div.video iframe {
+  width: 290px;
+  height: 163px;
+}
+main div.differences {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.differences table {
+  width: 100%;
+  font-size: 9px;
+  font-weight: 700;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+main div.differences table tr {
+  border: solid;
+  border-width: 1px 0;
+}
+main div.differences table tr th:nth-child(2) {
+  background-color: #1103b6;
+  color: white;
+}
+main div.differences table tr td {
+  text-align: center;
+  padding: 5px;
+}
+main div.differences table tr td img {
+  width: 25px;
+  height: 20px;
+}
+main div.differences table tr td:first-child {
+  text-align: left;
+}
+main div.differences table tr td:nth-child(2) {
+  background-color: #1103b6;
+  color: white;
+}
+main div.differences table tr:first-child {
+  border-top: none;
+}
+main div.differences table tr:last-child {
+  border-bottom: none;
+}
+main div.lecturers {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+main div.lecturers div.lecturer-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-bottom: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px 20px 30px;
+}
+main div.lecturers div.lecturer-item img.profile-pic {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 130px;
+  height: 130px;
+}
+main div.lecturers div.lecturer-item .field-of-study {
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+main div.lecturers div.lecturer-item .field-of-study img {
+  width: 25px;
+  height: 25px;
+}
+main div.lecturers div.lecturer-item .lecturer-name {
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+main div.lecturers div.lecturer-item .workplace {
+  padding-bottom: 15px;
+}
+main div.lecturers a.button-blue {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-bottom: 20px;
+}
+main div.choose-your-path {
+  background-color: #1103b6;
+  color: white;
+  margin-bottom: 30px;
+}
+main div.choose-your-path .path-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.choose-your-path .path-item h3 {
+  font-size: 25px;
+}
+main div.choose-your-path img {
+  width: 350px;
+  height: 231px;
+}
+main div.choose-your-path a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.alumni div.alumni-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  background-color: black;
+  color: white;
+  padding: 40px 50px 40px 50px;
+}
+main div.alumni div.alumni-item img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
