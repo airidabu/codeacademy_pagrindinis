@@ -2,6 +2,7 @@
 @use 'button';
 @use 'blinker';
 @use 'button-white';
+@use 'spinning-circle';
 
 *,
 *::before,
@@ -260,6 +261,7 @@ main {
             background-color: variables.$bg-color;
             color: variables.$white;
             padding: 40px 50px 40px 50px;
+
             img {
                 width: 85px;
                 height: 85px;
@@ -269,4 +271,22 @@ main {
         }
     }
 
+}
+
+footer {
+    position: relative;
+
+    .spinning-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: variables.$blue;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        @include spinning-circle.spinner;
+    }
 }

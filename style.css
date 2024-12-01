@@ -276,4 +276,26 @@ main div.alumni div.alumni-item img {
   width: 85px;
   height: 85px;
   border-radius: 50%;
+}
+
+footer {
+  position: relative;
+}
+footer .spinning-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1103b6;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  animation: spin 4s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
