@@ -289,15 +289,59 @@ main {
     }
 
     div.events {
-        @include centered-content;
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+        background-color: variables.$blue;
+        color: variables.$white;
 
-        img {
-            width: 290px;
-            height: 290px;
-            object-fit: cover;
+        div.event-card {
+            position: relative;
+            @include centered-content;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            div.event-image {
+                width: 290px;
+                height: 290px;
+
+                img {
+                    width: 290px;
+                    height: 290px;
+                    object-fit: cover;
+                }
+            }
+
+            div.event-date {
+                background-color: variables.$pink;
+                position: absolute;
+                overflow: hidden;
+                border-radius: 15px;
+                width: 70px;
+                text-align: center;
+                bottom: 146px;
+                left: 15px;
+
+                div.day {
+                    background-color: variables.$white;
+                    color: variables.$black;
+                    font-size: 30px;
+                    font-weight: 700;
+                    padding: 4px;
+                }
+
+                div.month {
+                    background-color: variables.$pink;
+                    color: variables.$white;
+                    font-weight: 600;
+                    font-size: 12px;
+                    padding: 4px;
+                    text-transform: uppercase;
+                }
+            }
+            div.address{
+                text-transform: uppercase;
+                padding-top: 15px;
+            }
         }
     }
 
@@ -310,7 +354,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: variables.$blue;
+        background-color: variables.$light-blue;
         border-radius: 50%;
         height: 80px;
         width: 80px;

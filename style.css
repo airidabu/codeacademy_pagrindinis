@@ -295,18 +295,58 @@ main div.partners img {
      object-fit: contain;
 }
 main div.events {
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  background-color: #1103b6;
+  color: white;
 }
-main div.events img {
+main div.events div.event-card {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main div.events div.event-card div.event-image {
+  width: 290px;
+  height: 290px;
+}
+main div.events div.event-card div.event-image img {
   width: 290px;
   height: 290px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main div.events div.event-card div.event-date {
+  background-color: #fe00e9;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 70px;
+  text-align: center;
+  bottom: 146px;
+  left: 15px;
+}
+main div.events div.event-card div.event-date div.day {
+  background-color: white;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 4px;
+}
+main div.events div.event-card div.event-date div.month {
+  background-color: #fe00e9;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 4px;
+  text-transform: uppercase;
+}
+main div.events div.event-card div.address {
+  text-transform: uppercase;
+  padding-top: 15px;
 }
 
 footer {
@@ -316,7 +356,7 @@ footer .spinning-circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1103b6;
+  background-color: #032db6;
   border-radius: 50%;
   height: 80px;
   width: 80px;
