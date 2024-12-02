@@ -288,6 +288,19 @@ main {
         }
     }
 
+    div.events {
+        @include centered-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        img {
+            width: 290px;
+            height: 290px;
+            object-fit: cover;
+        }
+    }
+
 }
 
 footer {
