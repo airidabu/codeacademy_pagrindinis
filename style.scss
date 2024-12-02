@@ -271,6 +271,23 @@ main {
         }
     }
 
+    div.partners {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include centered-content;
+
+        h2 {
+            grid-column: 1 / span 2;
+            font-size: 50px;
+        }
+
+        img {
+            width: 115px;
+            height: 77px;
+            object-fit: contain;
+        }
+    }
+
 }
 
 footer {
