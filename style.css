@@ -277,6 +277,23 @@ main div.alumni div.alumni-item img {
   height: 85px;
   border-radius: 50%;
 }
+main div.partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main div.partners h2 {
+  grid-column: 1/span 2;
+  font-size: 50px;
+}
+main div.partners img {
+  width: 115px;
+  height: 77px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 footer {
   position: relative;
